@@ -18,7 +18,8 @@ Welcome to **HibaBeauty**, a modern and responsive single-page website built for
 ## 🛠️ Tech Stack
 
 - **HTML5**
-- **Tailwind CSS** (via CDN)
-- **Google Fonts** – *Great Vibes* for logo & headings
-- **Vanilla JavaScript** (optional: for future form handling)
-- **Responsive Design** using Flexbox & Grid
+- **Tailwind CSS** 
+- **Google Fonts**
+- **Vanilla JavaScript**
+- **Typescript**
+- **Responsive Design**
