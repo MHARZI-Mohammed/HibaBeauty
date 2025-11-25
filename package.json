@@ -1,0 +1,16 @@
+{
+  "name": "beauty",
+  "version": "1.0.0",
+  "description": "Welcome to **HibaBeauty**, a modern and responsive single-page website built for a premium women's beauty salon. This site showcases services, products, and contact information with an elegant, user-friendly interface designed using **Tailwind CSS** and enhanced with subtle animations and clean typography.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

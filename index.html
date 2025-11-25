@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,27 +8,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-pink-50 text-gray-800 font-sans">
   <!-- Navbar -->
-<nav class="fixed w-full top-0 left-0 bg-pink-300 shadow-lg z-50 text-white">
-  <div class="max-w-7xl mx-auto flex items-center justify-between p-4 relative">
-    <h1 class="text-3xl text-white" style="font-family: 'Great Vibes', cursive;">HibaBeauty</h1>
-    <ul class="absolute left-1/2 transform -translate-x-1/2 flex gap-10 items-center text-pink-500 text-lg font-semibold">
-      <li><a href="#hero" class="hover:text-pink-600">Home</a></li>
-      <li><a href="#about" class="hover:text-pink-600">About</a></li>
-      <li><a href="#services" class="hover:text-pink-600">Services</a></li>
-      <li><a href="#products" class="hover:text-pink-600">Products</a></li>
-      <li><a href="#contact" class="hover:text-pink-600">Contact</a></li>
-    </ul>
-  </div>
-</nav>
+  <nav class="fixed w-full top-0 left-0 bg-pink-300 shadow-lg z-50 text-white">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-4 relative">
+      <h1 class="text-3xl text-white" style="font-family: 'Great Vibes', cursive;">HibaBeauty</h1>
+      <ul
+        class="absolute left-1/2 transform -translate-x-1/2 flex gap-10 items-center text-pink-500 text-lg font-semibold">
+        <li><a href="#hero" class="hover:text-pink-600">Home</a></li>
+        <li><a href="#about" class="hover:text-pink-600">About</a></li>
+        <li><a href="#services" class="hover:text-pink-600">Services</a></li>
+        <li><a href="#products" class="hover:text-pink-600">Products</a></li>
+        <li><a href="#contact" class="hover:text-pink-600">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
   <!-- Hero Section -->
-  <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center p-6 bg-[url('./assets/background.jpg')] bg-cover bg-center bg-no-repeat relative">
+  <section id="hero"
+    class="min-h-screen flex flex-col justify-center items-center text-center p-6 bg-[url('./assets/background.jpg')] bg-cover bg-center bg-no-repeat relative">
     <div class="absolute inset-0 bg-black/40"></div>
     <div class="relative z-10 max-w-2xl">
-      <h1 class="text-4xl md:text-6xl font-bold text-white mb-4" style="font-family: 'Great Vibes', cursive;">Beauty Salon for Women</h1>
-      <p class="text-lg md:text-xl text-white mb-6">Beauty, elegance, and professional care to reveal your natural charm.</p>
-      <button class="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-lg text-lg font-semibold">Book Now</button>
+      <h1 class="text-4xl md:text-6xl font-bold text-white mb-4" style="font-family: 'Great Vibes', cursive;">Beauty
+        Salon for Women</h1>
+      <p class="text-lg md:text-xl text-white mb-6">Beauty, elegance, and professional care to reveal your natural
+        charm.</p>
+      <button class="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-lg text-lg font-semibold">Book
+        Now</button>
     </div>
   </section>
   <!-- About Section -->
@@ -36,150 +43,159 @@
     <div class="max-w-4xl mx-auto text-center text-lg leading-relaxed">
       <p>
         At Beauty Salon for Women, we offer a premium experience dedicated to enhancing your natural beauty.
-        Our expert team provides modern hairstyles, professional makeup, facial treatments, and more—all in a relaxing and elegant atmosphere.
+        Our expert team provides modern hairstyles, professional makeup, facial treatments, and more—all in a relaxing
+        and elegant atmosphere.
       </p>
     </div>
   </section>
-<!-- Services Section -->
-<section class="py-16 px-6" id="services">
-  <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-pink-600">Our Services</h2>
-  <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
-    <!-- Service 1 -->
-    <div class="bg-white p-4 rounded-2xl shadow-lg text-center hover:shadow-2xl transition">
-      <img src="./assets/service1.jpg" class="w-full h-40 object-cover rounded-xl mb-4"/>
-      <h3 class="text-xl font-semibold mb-2">Hair Styling</h3>
-      <p>Modern, elegant hairstyles tailored to your look.</p>
-    </div>
-    <!-- Service 2 -->
-    <div class="bg-white p-4 rounded-2xl shadow-lg text-center hover:shadow-2xl transition">
-      <img src="./assets/service2.jpg" class="w-full h-40 object-cover rounded-xl mb-4"/>
-      <h3 class="text-xl font-semibold mb-2">Makeup</h3>
-      <p>Professional makeup for events and special occasions.</p>
-    </div>
-    <!-- Service 3 -->
-    <div class="bg-white p-4 rounded-2xl shadow-lg text-center hover:shadow-2xl transition">
-      <img src="./assets/service3.jpg" class="w-full h-40 object-cover rounded-xl mb-4"/>
-      <h3 class="text-xl font-semibold mb-2">Facial Care</h3>
-      <p>Treatments for radiant, soft, and glowing skin.</p>
-    </div>
-    <!-- Service 4 -->
-    <div class="bg-white p-4 rounded-2xl shadow-lg text-center hover:shadow-2xl transition">
-      <img src="./assets/service4.jpg" class="w-full h-40 object-cover rounded-xl mb-4"/>
-      <h3 class="text-xl font-semibold mb-2">Manicure & Pedicure</h3>
-      <p>Beautiful nails with professional care and stylish designs.</p>
-    </div>
-    <!-- Service 5 -->
-    <div class="bg-white p-4 rounded-2xl shadow-lg text-center hover:shadow-2xl transition">
-      <img src="./assets/Service5.jpg" class="w-full h-40 object-cover rounded-xl mb-4"/>
-      <h3 class="text-xl font-semibold mb-2">Hair Coloring</h3>
-      <p>Creative and professional hair coloring to match your style.</p>
-    </div>
-    <!-- Service 6 -->
-    <div class="bg-white p-4 rounded-2xl shadow-lg text-center hover:shadow-2xl transition">
-      <img src="./assets/service6.jpg" class="w-full h-40 object-cover rounded-xl mb-4"/>
-      <h3 class="text-xl font-semibold mb-2">Massage Therapy</h3>
-      <p>Relaxing massages to relieve stress and rejuvenate your body.</p>
-    </div>
-    <!-- Service 7 -->
-    <div class="bg-white p-4 rounded-2xl shadow-lg text-center hover:shadow-2xl transition">
-      <img src="./assets/service7.jpg" class="w-full h-40 object-cover rounded-xl mb-4"/>
-      <h3 class="text-xl font-semibold mb-2">Eyebrow & Eyelash</h3>
-      <p>Perfectly shaped eyebrows and enhanced eyelashes for stunning eyes.</p>
-    </div>
-    <!-- Service 8 -->
-    <div class="bg-white p-4 rounded-2xl shadow-lg text-center hover:shadow-2xl transition">
-      <img src="./assets/service8.jpg" class="w-full h-40 object-cover rounded-xl mb-4"/>
-      <h3 class="text-xl font-semibold mb-2">Spa Treatments</h3>
-      <p>Luxurious spa services to relax and pamper yourself fully.</p>
-    </div>
-  </div>
-</section>
-<!-- Products Section -->
-<section class="py-16 px-6 bg-white" id="products">
-  <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-pink-600">Beauty Products</h2>
-  <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
-    <!-- Product 1 -->
-    <div class="bg-white p-6 rounded-2xl shadow-lg border hover:shadow-2xl transition min-h-full flex flex-col justify-between">
-      <div>
-        <img src="./assets/product1.jpg" class="w-full h-56 object-cover rounded-xl mb-4" />
-        <h3 class="text-xl font-semibold mb-2">Hydrating Face Cream</h3>
-        <p class="text-gray-600 mb-3">Perfect moisture for glowing, soft and smooth skin.</p>
-        <p class="text-pink-600 font-bold text-lg mb-4">199 MAD</p>
+  <!-- Services Section -->
+  <section class="py-16 px-6" id="services">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-pink-600">Our Services</h2>
+    <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+      <!-- Service 1 -->
+      <div class="bg-white p-4 rounded-2xl shadow-lg text-center hover:shadow-2xl transition">
+        <img src="./assets/service1.jpg" class="w-full h-40 object-cover rounded-xl mb-4" />
+        <h3 class="text-xl font-semibold mb-2">Hair Styling</h3>
+        <p>Modern, elegant hairstyles tailored to your look.</p>
       </div>
-      <button class="bg-pink-600 hover:bg-pink-700 text-white px-5 py-2 rounded-lg w-full">Add to Cart</button>
-    </div>
-    <!-- Product 2 -->
-    <div class="bg-white p-6 rounded-2xl shadow-lg border hover:shadow-2xl transition min-h-full flex flex-col justify-between">
-      <div>
-        <img src="./assets/product2.jpg" class="w-full h-56 object-cover rounded-xl mb-4" />
-        <h3 class="text-xl font-semibold mb-2">Hair Nourishing Oil</h3>
-        <p class="text-gray-600 mb-3">Strengthens hair, adds shine, and reduces breakage.</p>
-        <p class="text-pink-600 font-bold text-lg mb-4">149 MAD</p>
+      <!-- Service 2 -->
+      <div class="bg-white p-4 rounded-2xl shadow-lg text-center hover:shadow-2xl transition">
+        <img src="./assets/service2.jpg" class="w-full h-40 object-cover rounded-xl mb-4" />
+        <h3 class="text-xl font-semibold mb-2">Makeup</h3>
+        <p>Professional makeup for events and special occasions.</p>
       </div>
-      <button class="bg-pink-600 hover:bg-pink-700 text-white px-5 py-2 rounded-lg w-full">Add to Cart</button>
-    </div>
-    <!-- Product 3 -->
-    <div class="bg-white p-6 rounded-2xl shadow-lg border hover:shadow-2xl transition min-h-full flex flex-col justify-between">
-      <div>
-        <img src="./assets/product3.jpg" class="w-full h-56 object-cover rounded-xl mb-4" />
-        <h3 class="text-xl font-semibold mb-2">Luxury Lip Gloss</h3>
-        <p class="text-gray-600 mb-3">Soft, shiny, long-lasting gloss with natural ingredients.</p>
-        <p class="text-pink-600 font-bold text-lg mb-4">99 MAD</p>
+      <!-- Service 3 -->
+      <div class="bg-white p-4 rounded-2xl shadow-lg text-center hover:shadow-2xl transition">
+        <img src="./assets/service3.jpg" class="w-full h-40 object-cover rounded-xl mb-4" />
+        <h3 class="text-xl font-semibold mb-2">Facial Care</h3>
+        <p>Treatments for radiant, soft, and glowing skin.</p>
       </div>
-      <button class="bg-pink-600 hover:bg-pink-700 text-white px-5 py-2 rounded-lg w-full">Add to Cart</button>
-    </div>
-    <!-- Product 4 -->
-    <div class="bg-white p-6 rounded-2xl shadow-lg border hover:shadow-2xl transition min-h-full flex flex-col justify-between">
-      <div>
-        <img src="./assets/product4.jpg" class="w-full h-56 object-cover rounded-xl mb-4" />
-        <h3 class="text-xl font-semibold mb-2">Organic Face Mask</h3>
-        <p class="text-gray-600 mb-3">Revitalizes skin and removes impurities naturally.</p>
-        <p class="text-pink-600 font-bold text-lg mb-4">129 MAD</p>
+      <!-- Service 4 -->
+      <div class="bg-white p-4 rounded-2xl shadow-lg text-center hover:shadow-2xl transition">
+        <img src="./assets/service4.jpg" class="w-full h-40 object-cover rounded-xl mb-4" />
+        <h3 class="text-xl font-semibold mb-2">Manicure & Pedicure</h3>
+        <p>Beautiful nails with professional care and stylish designs.</p>
       </div>
-      <button class="bg-pink-600 hover:bg-pink-700 text-white px-5 py-2 rounded-lg w-full">Add to Cart</button>
-    </div>
-    <!-- Product 5 -->
-    <div class="bg-white p-6 rounded-2xl shadow-lg border hover:shadow-2xl transition min-h-full flex flex-col justify-between">
-      <div>
-        <img src="./assets/product5.jpg" class="w-full h-56 object-cover rounded-xl mb-4" />
-        <h3 class="text-xl font-semibold mb-2">Nourishing Body Lotion</h3>
-        <p class="text-gray-600 mb-3">Smooth and hydrate your skin all day long.</p>
-        <p class="text-pink-600 font-bold text-lg mb-4">159 MAD</p>
+      <!-- Service 5 -->
+      <div class="bg-white p-4 rounded-2xl shadow-lg text-center hover:shadow-2xl transition">
+        <img src="./assets/service5.jpg" class="w-full h-40 object-cover rounded-xl mb-4" />
+        <h3 class="text-xl font-semibold mb-2">Hair Coloring</h3>
+        <p>Creative and professional hair coloring to match your style.</p>
       </div>
-      <button class="bg-pink-600 hover:bg-pink-700 text-white px-5 py-2 rounded-lg w-full">Add to Cart</button>
-    </div>
-    <!-- Product 6 -->
-    <div class="bg-white p-6 rounded-2xl shadow-lg border hover:shadow-2xl transition min-h-full flex flex-col justify-between">
-      <div>
-        <img src="./assets/product6.jpg" class="w-full h-56 object-cover rounded-xl mb-4" />
-        <h3 class="text-xl font-semibold mb-2">Essential Oils Set</h3>
-        <p class="text-gray-600 mb-3">Aromatherapy oils for relaxation and wellness.</p>
-        <p class="text-pink-600 font-bold text-lg mb-4">249 MAD</p>
+      <!-- Service 6 -->
+      <div class="bg-white p-4 rounded-2xl shadow-lg text-center hover:shadow-2xl transition">
+        <img src="./assets/service6.jpg" class="w-full h-40 object-cover rounded-xl mb-4" />
+        <h3 class="text-xl font-semibold mb-2">Massage Therapy</h3>
+        <p>Relaxing massages to relieve stress and rejuvenate your body.</p>
       </div>
-      <button class="bg-pink-600 hover:bg-pink-700 text-white px-5 py-2 rounded-lg w-full">Add to Cart</button>
-    </div>
-    <!-- Product 7 -->
-    <div class="bg-white p-6 rounded-2xl shadow-lg border hover:shadow-2xl transition min-h-full flex flex-col justify-between">
-      <div>
-        <img src="./assets/product7.jpg" class="w-full h-56 object-cover rounded-xl mb-4" />
-        <h3 class="text-xl font-semibold mb-2">Shimmering Highlighter</h3>
-        <p class="text-gray-600 mb-3">Illuminate your face with natural glow.</p>
-        <p class="text-pink-600 font-bold text-lg mb-4">119 MAD</p>
+      <!-- Service 7 -->
+      <div class="bg-white p-4 rounded-2xl shadow-lg text-center hover:shadow-2xl transition">
+        <img src="./assets/service7.jpg" class="w-full h-40 object-cover rounded-xl mb-4" />
+        <h3 class="text-xl font-semibold mb-2">Eyebrow & Eyelash</h3>
+        <p>Perfectly shaped eyebrows and enhanced eyelashes for stunning eyes.</p>
       </div>
-      <button class="bg-pink-600 hover:bg-pink-700 text-white px-5 py-2 rounded-lg w-full">Add to Cart</button>
-    </div>
-    <!-- Product 8 -->
-    <div class="bg-white p-6 rounded-2xl shadow-lg border hover:shadow-2xl transition min-h-full flex flex-col justify-between">
-      <div>
-        <img src="./assets/product8.jpg" class="w-full h-56 object-cover rounded-xl mb-4" />
-        <h3 class="text-xl font-semibold mb-2">Luxury Perfume</h3>
-        <p class="text-gray-600 mb-3">Elegant scent for all occasions.</p>
-        <p class="text-pink-600 font-bold text-lg mb-4">299 MAD</p>
+      <!-- Service 8 -->
+      <div class="bg-white p-4 rounded-2xl shadow-lg text-center hover:shadow-2xl transition">
+        <img src="./assets/service8.jpg" class="w-full h-40 object-cover rounded-xl mb-4" />
+        <h3 class="text-xl font-semibold mb-2">Spa Treatments</h3>
+        <p>Luxurious spa services to relax and pamper yourself fully.</p>
       </div>
-      <button class="bg-pink-600 hover:bg-pink-700 text-white px-5 py-2 rounded-lg w-full">Add to Cart</button>
     </div>
-  </div>
-</section>
+  </section>
+  <!-- Products Section -->
+  <section class="py-16 px-6 bg-white" id="products">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-pink-600">Beauty Products</h2>
+    <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+      <!-- Product 1 -->
+      <div
+        class="bg-white p-6 rounded-2xl shadow-lg border hover:shadow-2xl transition min-h-full flex flex-col justify-between">
+        <div>
+          <img src="./assets/product1.jpg" class="w-full h-56 object-cover rounded-xl mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Hydrating Face Cream</h3>
+          <p class="text-gray-600 mb-3">Perfect moisture for glowing, soft and smooth skin.</p>
+          <p class="text-pink-600 font-bold text-lg mb-4">199 MAD</p>
+        </div>
+        <button class="bg-pink-600 hover:bg-pink-700 text-white px-5 py-2 rounded-lg w-full">Add to Cart</button>
+      </div>
+      <!-- Product 2 -->
+      <div
+        class="bg-white p-6 rounded-2xl shadow-lg border hover:shadow-2xl transition min-h-full flex flex-col justify-between">
+        <div>
+          <img src="./assets/product2.jpg" class="w-full h-56 object-cover rounded-xl mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Hair Nourishing Oil</h3>
+          <p class="text-gray-600 mb-3">Strengthens hair, adds shine, and reduces breakage.</p>
+          <p class="text-pink-600 font-bold text-lg mb-4">149 MAD</p>
+        </div>
+        <button class="bg-pink-600 hover:bg-pink-700 text-white px-5 py-2 rounded-lg w-full">Add to Cart</button>
+      </div>
+      <!-- Product 3 -->
+      <div
+        class="bg-white p-6 rounded-2xl shadow-lg border hover:shadow-2xl transition min-h-full flex flex-col justify-between">
+        <div>
+          <img src="./assets/product3.jpg" class="w-full h-56 object-cover rounded-xl mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Luxury Lip Gloss</h3>
+          <p class="text-gray-600 mb-3">Soft, shiny, long-lasting gloss with natural ingredients.</p>
+          <p class="text-pink-600 font-bold text-lg mb-4">99 MAD</p>
+        </div>
+        <button class="bg-pink-600 hover:bg-pink-700 text-white px-5 py-2 rounded-lg w-full">Add to Cart</button>
+      </div>
+      <!-- Product 4 -->
+      <div
+        class="bg-white p-6 rounded-2xl shadow-lg border hover:shadow-2xl transition min-h-full flex flex-col justify-between">
+        <div>
+          <img src="./assets/product4.jpg" class="w-full h-56 object-cover rounded-xl mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Organic Face Mask</h3>
+          <p class="text-gray-600 mb-3">Revitalizes skin and removes impurities naturally.</p>
+          <p class="text-pink-600 font-bold text-lg mb-4">129 MAD</p>
+        </div>
+        <button class="bg-pink-600 hover:bg-pink-700 text-white px-5 py-2 rounded-lg w-full">Add to Cart</button>
+      </div>
+      <!-- Product 5 -->
+      <div
+        class="bg-white p-6 rounded-2xl shadow-lg border hover:shadow-2xl transition min-h-full flex flex-col justify-between">
+        <div>
+          <img src="./assets/product5.jpg" class="w-full h-56 object-cover rounded-xl mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Nourishing Body Lotion</h3>
+          <p class="text-gray-600 mb-3">Smooth and hydrate your skin all day long.</p>
+          <p class="text-pink-600 font-bold text-lg mb-4">159 MAD</p>
+        </div>
+        <button class="bg-pink-600 hover:bg-pink-700 text-white px-5 py-2 rounded-lg w-full">Add to Cart</button>
+      </div>
+      <!-- Product 6 -->
+      <div
+        class="bg-white p-6 rounded-2xl shadow-lg border hover:shadow-2xl transition min-h-full flex flex-col justify-between">
+        <div>
+          <img src="./assets/product6.jpg" class="w-full h-56 object-cover rounded-xl mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Essential Oils Set</h3>
+          <p class="text-gray-600 mb-3">Aromatherapy oils for relaxation and wellness.</p>
+          <p class="text-pink-600 font-bold text-lg mb-4">249 MAD</p>
+        </div>
+        <button class="bg-pink-600 hover:bg-pink-700 text-white px-5 py-2 rounded-lg w-full">Add to Cart</button>
+      </div>
+      <!-- Product 7 -->
+      <div
+        class="bg-white p-6 rounded-2xl shadow-lg border hover:shadow-2xl transition min-h-full flex flex-col justify-between">
+        <div>
+          <img src="./assets/product7.jpg" class="w-full h-56 object-cover rounded-xl mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Shimmering Highlighter</h3>
+          <p class="text-gray-600 mb-3">Illuminate your face with natural glow.</p>
+          <p class="text-pink-600 font-bold text-lg mb-4">119 MAD</p>
+        </div>
+        <button class="bg-pink-600 hover:bg-pink-700 text-white px-5 py-2 rounded-lg w-full">Add to Cart</button>
+      </div>
+      <!-- Product 8 -->
+      <div
+        class="bg-white p-6 rounded-2xl shadow-lg border hover:shadow-2xl transition min-h-full flex flex-col justify-between">
+        <div>
+          <img src="./assets/product8.jpg" class="w-full h-56 object-cover rounded-xl mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Luxury Perfume</h3>
+          <p class="text-gray-600 mb-3">Elegant scent for all occasions.</p>
+          <p class="text-pink-600 font-bold text-lg mb-4">299 MAD</p>
+        </div>
+        <button class="bg-pink-600 hover:bg-pink-700 text-white px-5 py-2 rounded-lg w-full">Add to Cart</button>
+      </div>
+    </div>
+  </section>
   <!-- Contact Section -->
   <section class="py-16 px-6 bg-pink-100" id="contact">
     <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-pink-600">Contact Us</h2>
@@ -188,43 +204,45 @@
         <input type="text" id="name" placeholder="Your Name" class="w-full p-3 border rounded-lg" />
         <input type="email" id="email" placeholder="Your Email" class="w-full p-3 border rounded-lg" />
         <textarea id="message" placeholder="Your Message" class="w-full p-3 border rounded-lg"></textarea>
-        <button type="submit" class="bg-pink-600 hover:bg-pink-700 text-white px-5 py-3 rounded-lg w-full font-bold">Send</button>
+        <button type="submit"
+          class="bg-pink-600 hover:bg-pink-700 text-white px-5 py-3 rounded-lg w-full font-bold">Send</button>
       </form>
     </div>
   </section>
   <!-- Footer -->
-<footer class="bg-pink-700 text-white py-8 px-6">
-  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-    <!-- Brand -->
-    <div class="text-center md:text-left">
-      <h3 class="text-2xl font-bold mb-2" style="font-family: 'Great Vibes', cursive;">HibaBeauty</h3>
-      <p class="text-pink-100 text-sm">Elegance, care, and beauty — all in one place.</p>
+  <footer class="bg-pink-700 text-white py-8 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Brand -->
+      <div class="text-center md:text-left">
+        <h3 class="text-2xl font-bold mb-2" style="font-family: 'Great Vibes', cursive;">HibaBeauty</h3>
+        <p class="text-pink-100 text-sm">Elegance, care, and beauty — all in one place.</p>
+      </div>
+      <!-- Quick Links -->
+      <div class="text-center md:text-left">
+        <h4 class="font-semibold text-lg mb-3">Quick Links</h4>
+        <ul class="space-y-2 text-pink-100">
+          <li><a href="#hero" class="hover:text-white transition">Home</a></li>
+          <li><a href="#about" class="hover:text-white transition">About</a></li>
+          <li><a href="#services" class="hover:text-white transition">Services</a></li>
+          <li><a href="#products" class="hover:text-white transition">Products</a></li>
+          <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Contact Info -->
+      <div class="text-center md:text-left">
+        <h4 class="font-semibold text-lg mb-3">Contact Us</h4>
+        <p class="text-pink-100 text-sm mb-1">Hay Riad Rabat, Morocco</p>
+        <p class="text-pink-100 text-sm mb-1">+212 6 00 00 00 00</p>
+        <p class="text-pink-100 text-sm">info@hibabeauty.ma</p>
+      </div>
     </div>
-    <!-- Quick Links -->
-    <div class="text-center md:text-left">
-      <h4 class="font-semibold text-lg mb-3">Quick Links</h4>
-      <ul class="space-y-2 text-pink-100">
-        <li><a href="#hero" class="hover:text-white transition">Home</a></li>
-        <li><a href="#about" class="hover:text-white transition">About</a></li>
-        <li><a href="#services" class="hover:text-white transition">Services</a></li>
-        <li><a href="#products" class="hover:text-white transition">Products</a></li>
-        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
-      </ul>
+    <!-- Bottom Bar -->
+    <div class="border-t border-pink-600 mt-8 pt-6 text-center text-pink-200 text-sm">
+      <p>© 2025 HibaBeauty. All rights reserved.</p>
     </div>
-    <!-- Contact Info -->
-    <div class="text-center md:text-left">
-      <h4 class="font-semibold text-lg mb-3">Contact Us</h4>
-      <p class="text-pink-100 text-sm mb-1">Hay Riad Rabat, Morocco</p>
-      <p class="text-pink-100 text-sm mb-1">+212 6 00 00 00 00</p>
-      <p class="text-pink-100 text-sm">info@hibabeauty.ma</p>
-    </div>
-  </div>
-  <!-- Bottom Bar -->
-  <div class="border-t border-pink-600 mt-8 pt-6 text-center text-pink-200 text-sm">
-    <p>© 2025 HibaBeauty. All rights reserved.</p>
-  </div>
-</footer>
+  </footer>
 
-  <script type="module" src="src/main.ts"></script>
+  <script type="module" src="dist/main.js"></script>
 </body>
+
 </html>
