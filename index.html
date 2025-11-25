@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HibaBeauty</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-50 text-gray-800 font-sans">
+  <!-- Navbar -->
+<nav class="fixed w-full top-0 left-0 bg-pink-300 shadow-lg z-50 text-white">
+  <div class="max-w-7xl mx-auto flex items-center justify-between p-4 relative">
+    <!-- Logo stays on the left -->
+    <h1 class="text-3xl text-white" style="font-family: 'Great Vibes', cursive;">HibaBeauty</h1>
+
+    <!-- Menu centered -->
+    <ul class="absolute left-1/2 transform -translate-x-1/2 flex gap-10 items-center text-white text-lg font-semibold">
+      <li><a href="#hero" class="hover:text-pink-500">Home</a></li>
+      <li><a href="#about" class="hover:text-pink-500">About</a></li>
+      <li><a href="#services" class="hover:text-pink-500">Services</a></li>
+      <li><a href="#products" class="hover:text-pink-500">Products</a></li>
+      <li><a href="#contact" class="hover:text-pink-500">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <!-- Hero Section -->
+  <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center p-6 
+  bg-[url('./assets/background.jpg')] bg-cover bg-center bg-no-repeat relative">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative z-10 max-w-2xl">
+      <h1 class="text-4xl md:text-6xl font-bold text-white mb-4" style="font-family: 'Great Vibes', cursive;">Beauty Salon for Women</h1>
+      <p class="text-lg md:text-xl text-white mb-6">Beauty, elegance, and professional care to reveal your natural charm.</p>
+      <button class="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-lg text-lg font-semibold">Book Now</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-16 px-6 bg-white" id="about">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-pink-600">About Us</h2>
+    <div class="max-w-4xl mx-auto text-center text-lg leading-relaxed">
+      <p>
+        At Beauty Salon for Women, we offer a premium experience dedicated to enhancing your natural beauty.
+        Our expert team provides modern hairstyles, professional makeup, facial treatments, and more—all in a relaxing and elegant atmosphere.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-16 px-6" id="services">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-pink-600">Our Services</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="bg-white p-6 rounded-2xl shadow-lg text-center">
+        <h3 class="text-xl font-semibold mb-3">Hair Styling</h3>
+        <p>Modern, elegant hairstyles tailored to your look.</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-lg text-center">
+        <h3 class="text-xl font-semibold mb-3">Makeup</h3>
+        <p>Professional makeup for events and special occasions.</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-lg text-center">
+        <h3 class="text-xl font-semibold mb-3">Facial Care</h3>
+        <p>Treatments for radiant, soft, and glowing skin.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="py-16 px-6 bg-white" id="products">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-pink-600">Beauty Products</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="bg-white p-6 rounded-2xl shadow-lg text-center border hover:shadow-2xl transition">
+        <img src="https://images.unsplash.com/photo-1596464716121-9f24f87a3b1d" class="w-full h-56 object-cover rounded-xl mb-4" />
+        <h3 class="text-xl font-semibold mb-2">Hydrating Face Cream</h3>
+        <p class="text-gray-600 mb-3">Perfect moisture for glowing, soft and smooth skin.</p>
+        <p class="text-pink-600 font-bold text-lg mb-4">$19.99</p>
+        <button class="bg-pink-600 hover:bg-pink-700 text-white px-5 py-2 rounded-lg">Add to Cart</button>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-lg text-center border hover:shadow-2xl transition">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" class="w-full h-56 object-cover rounded-xl mb-4" />
+        <h3 class="text-xl font-semibold mb-2">Hair Nourishing Oil</h3>
+        <p class="text-gray-600 mb-3">Strengthens hair, adds shine, and reduces breakage.</p>
+        <p class="text-pink-600 font-bold text-lg mb-4">$14.99</p>
+        <button class="bg-pink-600 hover:bg-pink-700 text-white px-5 py-2 rounded-lg">Add to Cart</button>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-lg text-center border hover:shadow-2xl transition">
+        <img src="https://images.unsplash.com/photo-1616207131424-3f31d9acf8c7" class="w-full h-56 object-cover rounded-xl mb-4" />
+        <h3 class="text-xl font-semibold mb-2">Luxury Lip Gloss</h3>
+        <p class="text-gray-600 mb-3">Soft, shiny, long-lasting gloss with natural ingredients.</p>
+        <p class="text-pink-600 font-bold text-lg mb-4">$9.99</p>
+        <button class="bg-pink-600 hover:bg-pink-700 text-white px-5 py-2 rounded-lg">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-16 px-6 bg-pink-100" id="contact">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-pink-600">Contact Us</h2>
+    <div class="max-w-xl mx-auto bg-white p-6 rounded-2xl shadow-lg">
+      <form id="contactForm" class="space-y-4">
+        <input type="text" id="name" placeholder="Your Name" class="w-full p-3 border rounded-lg" />
+        <input type="email" id="email" placeholder="Your Email" class="w-full p-3 border rounded-lg" />
+        <textarea id="message" placeholder="Your Message" class="w-full p-3 border rounded-lg"></textarea>
+        <button type="submit" class="bg-pink-600 hover:bg-pink-700 text-white px-5 py-3 rounded-lg w-full font-semibold">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-pink-600 text-white">
+    <p>© 2025 HibaBeauty. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="src/main.ts"></script>
+</body>
+</html>
