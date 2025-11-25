@@ -2,10 +2,6 @@
 
 Welcome to **HibaBeauty**, a modern and responsive single-page website built for a premium women's beauty salon. This site showcases services, products, and contact information with an elegant, user-friendly interface designed using **Tailwind CSS** and enhanced with subtle animations and clean typography.
 
-![HibaBeauty Screenshot](./assets/screenshot.png)  
-*(Replace or add actual screenshot later)*
-
----
 
 ## 🌟 Features
 
