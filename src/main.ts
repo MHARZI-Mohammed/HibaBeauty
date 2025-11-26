@@ -18,11 +18,11 @@ function init() {
 // ========== SMOOTH SCROLLING ==========
 function setupSmoothScrolling(): void {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+    anchor.addEventListener('click', (e) => {
       e.preventDefault();
-      const targetId = this.getAttribute('href');
+      const targetId = (e.target as HTMLAnchorElement).getAttribute('href');
       if (!targetId || targetId === '#') return;
-
+      
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
         window.scrollTo({
@@ -70,7 +70,7 @@ function setupContactForm(): void {
       return;
     }
 
-    showToast('Thank you! Your message has been sent. We’ll contact you soon 💖', 'success');
+    showToast('Thank you! Your message has been sent. Well contact you soon', 'success');
     contactForm.reset();
   });
 }

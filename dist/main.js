@@ -9,14 +9,14 @@ function init() {
     setupBookNowButton();
     setupContactForm();
     setupAddToCart();
-    console.log('HibaBeauty interactive script loaded ✨');
+    console.log('HibaBeauty interactive script loaded');
 }
 // ========== SMOOTH SCROLLING ==========
 function setupSmoothScrolling() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
+        anchor.addEventListener('click', (e) => {
             e.preventDefault();
-            const targetId = this.getAttribute('href');
+            const targetId = e.target.getAttribute('href');
             if (!targetId || targetId === '#')
                 return;
             const targetElement = document.querySelector(targetId);
@@ -64,7 +64,7 @@ function setupContactForm() {
             showToast('Please enter a valid email.', 'error');
             return;
         }
-        showToast('Thank you! Your message has been sent. We’ll contact you soon 💖', 'success');
+        showToast('Thank you! Your message has been sent. Well contact you soon', 'success');
         contactForm.reset();
     });
 }
