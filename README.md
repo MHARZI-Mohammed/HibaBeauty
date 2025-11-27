@@ -19,7 +19,5 @@ Welcome to **HibaBeauty**, a modern and responsive single-page website built for
 
 - **HTML5**
 - **Tailwind CSS** 
-- **Google Fonts**
 - **Vanilla JavaScript**
-- **Typescript**
-- **Responsive Design**
+- **TypeScript**
