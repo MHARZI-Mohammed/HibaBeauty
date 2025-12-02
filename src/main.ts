@@ -13,6 +13,7 @@ function init() {
   setupBookNowButton();
   setupContactForm();
   setupAddToCart();
+  setupBookingPopup();
   console.log('HibaBeauty interactive script loaded ✨');
 }
 // ========== SMOOTH SCROLLING ==========
@@ -125,3 +126,46 @@ function showToast(message: string, type: 'success' | 'error'): void {
 }
 // ========== START APP ==========
 document.addEventListener('DOMContentLoaded', init);
+
+// ========== BOOKING POPUP ==========
+function setupBookingPopup(): void {
+  const popup = document.getElementById('bookingPopup') as HTMLElement | null;
+  const closeBtn = document.getElementById('closeBooking') as HTMLButtonElement | null;
+  const form = document.getElementById('bookingForm') as HTMLFormElement | null;
+
+  if (!popup || !closeBtn || !form) return;
+
+  // open popup from the hero button
+  const heroBtn = document.querySelector('#hero button') as HTMLButtonElement | null;
+  heroBtn?.addEventListener('click', (e) => {
+    e.preventDefault();
+    popup.classList.remove('hidden');
+  });
+
+  // close popup
+  closeBtn.addEventListener('click', () => popup.classList.add('hidden'));
+
+  // close when clicking outside the panel
+  popup.addEventListener('click', (ev) => {
+    if (ev.target === popup) popup.classList.add('hidden');
+  });
+
+  // submit
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = (document.getElementById('b_name') as HTMLInputElement).value.trim();
+    const phone = (document.getElementById('b_phone') as HTMLInputElement).value.trim();
+    const service = (document.getElementById('b_service') as HTMLSelectElement).value.trim();
+    const date = (document.getElementById('b_date') as HTMLInputElement).value;
+
+    if (!name || !phone || !service || !date) {
+      showToast('Please fill in all fields.', 'error');
+      return;
+    }
+
+    // success feedback
+    showToast('Your booking is confirmed! We will contact you soon 💖', 'success');
+    popup.classList.add('hidden');
+    form.reset();
+  });
+}

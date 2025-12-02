@@ -9,7 +9,8 @@ function init() {
     setupBookNowButton();
     setupContactForm();
     setupAddToCart();
-    console.log('HibaBeauty interactive script loaded');
+    setupBookingPopup();
+    console.log('HibaBeauty interactive script loaded ✨');
 }
 // ========== SMOOTH SCROLLING ==========
 function setupSmoothScrolling() {
@@ -111,3 +112,40 @@ function showToast(message, type) {
 }
 // ========== START APP ==========
 document.addEventListener('DOMContentLoaded', init);
+// ========== BOOKING POPUP ==========
+function setupBookingPopup() {
+    const popup = document.getElementById('bookingPopup');
+    const closeBtn = document.getElementById('closeBooking');
+    const form = document.getElementById('bookingForm');
+    if (!popup || !closeBtn || !form)
+        return;
+    // open popup from the hero button
+    const heroBtn = document.querySelector('#hero button');
+    heroBtn?.addEventListener('click', (e) => {
+        e.preventDefault();
+        popup.classList.remove('hidden');
+    });
+    // close popup
+    closeBtn.addEventListener('click', () => popup.classList.add('hidden'));
+    // close when clicking outside the panel
+    popup.addEventListener('click', (ev) => {
+        if (ev.target === popup)
+            popup.classList.add('hidden');
+    });
+    // submit
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('b_name').value.trim();
+        const phone = document.getElementById('b_phone').value.trim();
+        const service = document.getElementById('b_service').value.trim();
+        const date = document.getElementById('b_date').value;
+        if (!name || !phone || !service || !date) {
+            showToast('Please fill in all fields.', 'error');
+            return;
+        }
+        // success feedback
+        showToast('Your booking is confirmed! We will contact you soon 💖', 'success');
+        popup.classList.add('hidden');
+        form.reset();
+    });
+}
