@@ -10,7 +10,7 @@ function init() {
     setupContactForm();
     setupAddToCart();
     setupBookingPopup();
-    console.log('HibaBeauty interactive script loaded ✨');
+    console.log('HibaBeauty interactive script loaded');
 }
 // ========== SMOOTH SCROLLING ==========
 function setupSmoothScrolling() {
@@ -78,7 +78,7 @@ function setupAddToCart() {
             const productName = productCard?.querySelector('h3')?.textContent || 'Product';
             cartCount++;
             updateCartUI();
-            showToast(`"${productName}" added to your cart! 🛍️`, 'success');
+            showToast(`"${productName}" added to your cart!`, 'success');
             // Visual feedback
             const originalText = button.textContent;
             button.textContent = 'Added!';
@@ -144,7 +144,7 @@ function setupBookingPopup() {
             return;
         }
         // success feedback
-        showToast('Your booking is confirmed! We will contact you soon 💖', 'success');
+        showToast('Your booking is confirmed! We will contact you soon', 'success');
         popup.classList.add('hidden');
         form.reset();
     });
