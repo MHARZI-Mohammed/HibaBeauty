@@ -18,6 +18,6 @@ Welcome to **HibaBeauty**, a modern and responsive single-page website built for
 ## 🛠️ Tech Stack
 
 - **HTML5**
-- **Tailwind CSS** 
+- **TailwindCSS** 
 - **Vanilla JavaScript**
 - **TypeScript**
